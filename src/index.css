@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-tech: 'Chakra Petch', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #080c10;
+    color: #e2e8f0;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+}
+
+/* Custom range sliders for audio console */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #1e293b;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background-color: #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  border: 2px solid #064e3b;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.2);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.8);
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #1e293b;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background-color: #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  border: 2px solid #064e3b;
+}
+
+/* Geospatial technical grid overlay */
+.geo-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+}
+
+.radar-sweep {
+  background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #080c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}

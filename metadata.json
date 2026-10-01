@@ -1,0 +1,6 @@
+{
+  "name": "Kaizen Subliminal Engine",
+  "description": "Precision mobile audio engine for layered subliminal affirmations, ambient soundscapes, low-latency DSP mixing, and session mastering.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
